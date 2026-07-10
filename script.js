@@ -11,7 +11,7 @@ d.innerHTML=`
 <p><strong>$${p.precio}</strong></p>
 <p>${p.descripcion}</p>
 <a class="btn" target="_blank"
-href="https://wa.me/5299396952479?text=${encodeURIComponent('Hola GARVAL, me interesa '+p.nombre)}">Solicitar por WhatsApp</a>`;
+href="https://wa.me/529936952479?text=${encodeURIComponent('Hola, GARVAL. Vi el producto "' + p.nombre + '" en su catálogo y me interesa. ¿Podrían brindarme más información, por favor?')}">💬 Solicitar información</a>`;
 c.appendChild(d);
 });
 });
