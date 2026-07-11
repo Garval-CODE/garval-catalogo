@@ -601,3 +601,65 @@ footer{
     width:100%;
 
 }
+
+/*==========================
+AJUSTE LOGOS GARVAL
+==========================*/
+
+
+/* Logo pequeño del menú */
+
+.logo-menu img{
+
+    width:95px;
+    height:auto;
+    display:block;
+
+}
+
+
+/* Logo grande del centro */
+
+.logo-central{
+
+    width:180px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:0 auto 25px;
+
+}
+
+
+/* Ajuste del banner para que no corte el logo */
+
+.banner{
+
+    padding-top:120px;
+
+}
+
+
+@media(max-width:600px){
+
+    .logo-menu img{
+
+        width:75px;
+
+    }
+
+
+    .logo-central{
+
+        width:150px;
+
+    }
+
+
+    .banner{
+
+        padding-top:100px;
+
+    }
+
+}
