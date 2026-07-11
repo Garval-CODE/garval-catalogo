@@ -10,59 +10,65 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<nav>
+<!--================ MENU =================-->
 
-<div class="menu">
+<header>
+
+<div class="contenedor">
+
+<div class="logo-menu">
+
+<img src="img/logo-garval.png">
+
+</div>
+
+<nav>
 
 <a href="#">Inicio</a>
 
 <a href="#catalogo">Catálogo</a>
 
-<a href="#">Dama</a>
+<a href="#dama">Dama</a>
 
-<a href="#">Caballero</a>
+<a href="#caballero">Caballero</a>
 
-<a href="#">Perfumes</a>
+<a href="#aretes">Aretes</a>
+
+<a href="#collares">Collares</a>
+
+<a href="#pulseras">Pulseras</a>
+
+<a href="#perfumes">Perfumes</a>
 
 <a href="#contacto">Contacto</a>
 
-<a class="whatsapp"
-
-target="_blank"
-
-href="https://wa.me/529936952479?text=Hola%20GARVAL.%20Vi%20su%20cat%C3%A1logo%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
+</nav>
 
 </div>
 
-</nav>
+</header>
 
-<header class="hero">
 
-<div class="overlay">
 
-<img src="img/logo-garval.png" class="logo">
+<!--================ BANNER =================-->
 
-<h2>CATÁLOGO DE</h2>
+<section class="banner">
 
-<h1>ACCESORIOS Y PRODUCTOS DE NICE</h1>
+<div class="capa"></div>
+
+<div class="banner-texto">
+
+<img src="img/logo-garval.png" class="logo-central">
+
+<h1>GARVAL</h1>
+
+<h2>Catálogo de Accesorios y Productos NICE</h2>
 
 <p>
 
@@ -78,29 +84,93 @@ VER CATÁLOGO
 
 </div>
 
-</header>
+</section>
+
+
+
+<!--================ CATEGORIAS =================-->
 
 <section class="categorias">
 
-<h2>Explora nuestras categorías</h2>
+<h2>
 
-<div class="iconos">
+Explora nuestras categorías
 
-<div>Dama</div>
+</h2>
 
-<div>Caballero</div>
+<div class="grid-categorias">
 
-<div>Aretes</div>
+<div class="categoria">
 
-<div>Collares</div>
+💎
 
-<div>Pulseras</div>
+<span>Dama</span>
 
-<div>Perfumes</div>
+</div>
+
+<div class="categoria">
+
+👔
+
+<span>Caballero</span>
+
+</div>
+
+<div class="categoria">
+
+✨
+
+<span>Aretes</span>
+
+</div>
+
+<div class="categoria">
+
+📿
+
+<span>Collares</span>
+
+</div>
+
+<div class="categoria">
+
+💍
+
+<span>Pulseras</span>
+
+</div>
+
+<div class="categoria">
+
+🌸
+
+<span>Perfumes</span>
+
+</div>
 
 </div>
 
 </section>
+
+
+
+<!--================ BUSCADOR =================-->
+
+<section class="buscar">
+
+<input
+
+type="text"
+
+id="buscar"
+
+placeholder="Buscar productos...">
+
+</section>
+
+
+
+<!--================ PRODUCTOS =================-->
 
 <section id="catalogo">
 
@@ -110,25 +180,45 @@ Catálogo de Accesorios y Productos NICE
 
 </h2>
 
-<div id="productos"></div>
+<div id="productos">
+
+</div>
 
 </section>
+
+
+
+<!--================ FOOTER =================-->
 
 <footer id="contacto">
 
 <img src="img/logo-garval.png" class="logo-footer">
 
-<h3>GARVAL – Joyas y Accesorios NICE</h3>
+<h3>
+
+GARVAL
+
+</h3>
 
 <p>
 
-📱 WhatsApp: 993 695 2479
+Catálogo de Accesorios y Productos NICE
 
 </p>
 
 <p>
 
-📘 Facebook: GARVAL – Joyas y Accesorios NICE
+📱 WhatsApp
+
+993 695 2479
+
+</p>
+
+<p>
+
+📘 Facebook
+
+GARVAL - Joyas y Accesorios NICE
 
 </p>
 
@@ -139,6 +229,24 @@ Empresaria Independiente NICE
 </p>
 
 </footer>
+
+
+
+<!--================ BOTON WHATSAPP =================-->
+
+<a
+
+class="whatsapp"
+
+target="_blank"
+
+href="https://wa.me/529936952479?text=Hola,%20GARVAL.%20Vi%20su%20catálogo%20y%20me%20gustaría%20recibir%20más%20información.">
+
+💬
+
+</a>
+
+
 
 <script src="script.js"></script>
 
