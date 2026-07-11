@@ -566,3 +566,38 @@ footer{
     }
 
 }
+
+/*==========================
+PRUEBA DE ANCHO TOTAL
+==========================*/
+
+html, body{
+
+    width:100vw;
+    max-width:100%;
+    overflow-x:hidden;
+
+}
+
+
+section,
+header,
+footer{
+
+    width:100% !important;
+
+}
+
+
+.banner{
+
+    width:100vw !important;
+
+}
+
+
+#productos{
+
+    width:100%;
+
+}
