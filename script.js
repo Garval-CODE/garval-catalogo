@@ -1,17 +1,115 @@
-fetch('productos.json')
-.then(r=>r.json())
-.then(data=>{
-const c=document.getElementById('productos');
-data.forEach(p=>{
-const d=document.createElement('div');
-d.className='card';
-d.innerHTML=`
-<img src="${p.imagen}" alt="${p.nombre}">
-<h3>${p.nombre}</h3>
-<p><strong>$${p.precio}</strong></p>
-<p>${p.descripcion}</p>
-<a class="btn" target="_blank"
-href="https://wa.me/529936952479?text=${encodeURIComponent('Hola, GARVAL. Vi el producto "' + p.nombre + '" en su catálogo y me interesa. ¿Podrían brindarme más información, por favor?')}">💬 Solicitar información</a>`;
-c.appendChild(d);
+fetch("productos.json")
+
+.then(res => res.json())
+
+.then(productos => {
+
+
+const contenedor = document.getElementById("productos");
+
+const buscador = document.getElementById("buscar");
+
+
+
+function mostrarProductos(lista){
+
+
+contenedor.innerHTML = "";
+
+
+lista.forEach(producto => {
+
+
+const tarjeta = document.createElement("div");
+
+tarjeta.className = "card";
+
+
+
+tarjeta.innerHTML = `
+
+
+<img src="${producto.imagen}" alt="${producto.nombre}">
+
+
+<h3>${producto.nombre}</h3>
+
+
+<p>${producto.descripcion}</p>
+
+
+<strong>$${producto.precio} MXN</strong>
+
+
+<a 
+
+class="btn"
+
+target="_blank"
+
+href="https://wa.me/529936952479?text=${encodeURIComponent(
+
+"Hola GARVAL. Vi el producto " 
+
++ producto.nombre 
+
++ " en su catálogo y me gustaría recibir más información."
+
+)}">
+
+💬 Solicitar información
+
+</a>
+
+
+`;
+
+
+contenedor.appendChild(tarjeta);
+
+
+
 });
+
+
+}
+
+
+
+mostrarProductos(productos);
+
+
+
+
+
+buscador.addEventListener("input",()=>{
+
+
+const texto = buscador.value.toLowerCase();
+
+
+
+const filtrados = productos.filter(producto =>
+
+
+producto.nombre.toLowerCase().includes(texto)
+
+||
+
+producto.categoria.toLowerCase().includes(texto)
+
+
+
+);
+
+
+
+mostrarProductos(filtrados);
+
+
+
+});
+
+
+
 });
