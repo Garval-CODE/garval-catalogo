@@ -33,8 +33,7 @@ tarjeta.innerHTML = `
 src="${producto.imagen}" 
 alt="${producto.nombre}"
 class="imagen-producto"
-onclick="window.open('${producto.imagen}', '_blank')">
-
+class="imagen-producto"
 <h3>${producto.nombre}</h3>
 
 
@@ -113,6 +112,56 @@ mostrarProductos(filtrados);
 
 });
 
+
+
+});
+
+/*==========================
+VISOR DE IMAGEN
+==========================*/
+
+const visor = document.getElementById("visor");
+
+const imagenGrande = document.getElementById("imagen-grande");
+
+const cerrar = document.querySelector(".cerrar");
+
+
+
+document.querySelectorAll(".imagen-producto").forEach(imagen => {
+
+
+    imagen.addEventListener("click",()=>{
+
+
+        visor.style.display="flex";
+
+        imagenGrande.src = imagen.src;
+
+
+    });
+
+
+});
+
+
+
+cerrar.addEventListener("click",()=>{
+
+    visor.style.display="none";
+
+});
+
+
+
+visor.addEventListener("click",(e)=>{
+
+
+    if(e.target === visor){
+
+        visor.style.display="none";
+
+    }
 
 
 });
