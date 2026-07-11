@@ -226,3 +226,295 @@ BANNER
     line-height:1.8;
 
 }
+
+/*==========================
+BOTÓN PRINCIPAL
+==========================*/
+
+.boton{
+
+    display:inline-block;
+
+    background:var(--rosa);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(217,122,150,.35);
+
+}
+
+.boton:hover{
+
+    background:var(--rosa-hover);
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(217,122,150,.45);
+
+}
+
+/*==========================
+CATEGORÍAS
+==========================*/
+
+.categorias{
+
+    padding:90px 8%;
+
+    background:var(--blanco);
+
+}
+
+.categorias h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    color:#6D4A4A;
+
+    margin-bottom:55px;
+
+}
+
+.grid-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:30px;
+
+}
+
+.categoria{
+
+    background:var(--rosa-claro);
+
+    border-radius:25px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:var(--sombra);
+
+}
+
+.categoria:hover{
+
+    transform:translateY(-8px);
+
+    background:#FFE8F0;
+
+}
+
+.categoria{
+
+    font-size:42px;
+
+}
+
+.categoria span{
+
+    display:block;
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+/*==========================
+BUSCADOR
+==========================*/
+
+.buscar{
+
+    width:100%;
+
+    padding:20px 8% 50px;
+
+    background:#fff;
+
+}
+
+#buscar{
+
+    width:100%;
+
+    max-width:600px;
+
+    display:block;
+
+    margin:auto;
+
+    padding:18px 25px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:40px;
+
+    background:#FFF4F7;
+
+    box-shadow:var(--sombra);
+
+    font-size:16px;
+
+}
+
+/*==========================
+CATÁLOGO
+==========================*/
+
+#catalogo{
+
+    padding:20px 8% 100px;
+
+    background:#FFF8FA;
+
+}
+
+#catalogo h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    color:#6D4A4A;
+
+    margin-bottom:55px;
+
+}
+
+/*==========================
+PRODUCTOS
+==========================*/
+
+#productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:20px 20px 10px;
+
+    font-size:22px;
+
+    color:#444;
+
+}
+
+.card p{
+
+    padding:0 20px;
+
+    color:#777;
+
+    line-height:1.6;
+
+}
+
+.card strong{
+
+    display:block;
+
+    margin:18px 20px;
+
+    font-size:24px;
+
+    color:var(--dorado);
+
+}
+
+.card .btn{
+
+    display:block;
+
+    margin:20px;
+
+    text-align:center;
+
+    background:var(--rosa);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:40px;
+
+    transition:.30s;
+
+}
+
+.card .btn:hover{
+
+    background:var(--rosa-hover);
+
+}
