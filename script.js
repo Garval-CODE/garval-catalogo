@@ -29,7 +29,11 @@ tarjeta.className = "card";
 tarjeta.innerHTML = `
 
 
-<img src="${producto.imagen}" alt="${producto.nombre}">
+<img 
+src="${producto.imagen}" 
+alt="${producto.nombre}"
+class="imagen-producto"
+onclick="verImagen('${producto.imagen}')">
 
 
 <h3>${producto.nombre}</h3>
@@ -113,3 +117,9 @@ mostrarProductos(filtrados);
 
 
 });
+
+function verImagen(imagen){
+
+    window.open(imagen, "_blank");
+
+}
