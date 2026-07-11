@@ -518,3 +518,51 @@ PRODUCTOS
     background:var(--rosa-hover);
 
 }
+
+/*==========================
+CORRECCIÓN ANCHO GENERAL
+==========================*/
+
+body{
+    width:100%;
+    min-width:100%;
+}
+
+
+.banner,
+.categorias,
+.buscar,
+#catalogo,
+footer{
+
+    width:100%;
+
+}
+
+
+.contenedor{
+
+    width:90%;
+    max-width:1400px;
+    margin:0 auto;
+
+}
+
+
+.banner-texto{
+
+    width:100%;
+    max-width:900px;
+
+}
+
+
+@media(max-width:600px){
+
+    .contenedor{
+
+        width:95%;
+
+    }
+
+}
