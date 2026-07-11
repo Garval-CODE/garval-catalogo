@@ -622,11 +622,21 @@ AJUSTE LOGOS GARVAL
 
 .logo-central{
 
-    width:180px;
-    max-width:80%;
+  .logo-central{
+
+    width:140px !important;
+
     height:auto;
+
+    max-height:140px;
+
+    object-fit:contain;
+
+    margin:0 auto 20px;
+
     display:block;
-    margin:0 auto 25px;
+
+}
 
 }
 
@@ -697,6 +707,29 @@ header .logo-menu img{
 .banner .logo-central{
     width:130px !important;
     max-width:130px !important;
+}
+
+}
+
+.banner-texto{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+@media(max-width:600px){
+
+.logo-central{
+
+    width:120px !important;
+
+    max-height:120px;
+
 }
 
 }
