@@ -663,3 +663,40 @@ AJUSTE LOGOS GARVAL
     }
 
 }
+
+/* ===== CORRECCION FINAL LOGOS GARVAL ===== */
+
+header .logo-menu img{
+    width:90px !important;
+    height:auto !important;
+    object-fit:contain;
+}
+
+
+.banner{
+    padding-top:140px !important;
+    overflow:hidden;
+}
+
+
+.banner .logo-central{
+    width:160px !important;
+    height:auto !important;
+    max-width:160px !important;
+    object-fit:contain;
+}
+
+
+@media(max-width:600px){
+
+header .logo-menu img{
+    width:70px !important;
+}
+
+
+.banner .logo-central{
+    width:130px !important;
+    max-width:130px !important;
+}
+
+}
