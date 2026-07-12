@@ -32,8 +32,7 @@ tarjeta.innerHTML = `
 <img 
 src="${producto.imagen}" 
 alt="${producto.nombre}"
-class="imagen-producto"
-class="imagen-producto"
+class="imagen-producto">
 <h3>${producto.nombre}</h3>
 
 
@@ -68,7 +67,14 @@ href="https://wa.me/529936952479?text=${encodeURIComponent(
 
 
 contenedor.appendChild(tarjeta);
+    
+tarjeta.querySelector(".imagen-producto").addEventListener("click",()=>{
 
+    visor.style.display="flex";
+
+    imagenGrande.src = producto.imagen;
+
+});
 
 
 });
