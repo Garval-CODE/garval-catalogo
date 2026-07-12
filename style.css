@@ -457,6 +457,19 @@ PRODUCTOS
 
     object-fit:cover;
 
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+
+.card img:hover{
+
+    transform:scale(1.05);
+
+}
+
 }
 
 .card h3{
