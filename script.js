@@ -127,6 +127,7 @@ VISOR DE IMAGEN
 ==========================*/
 
 const visor = document.getElementById("visor");
+console.log(visor);
 
 const imagenGrande = document.getElementById("imagen-grande");
 
