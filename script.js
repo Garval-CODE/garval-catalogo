@@ -99,12 +99,9 @@ const texto = buscador.value.toLowerCase();
 
 const filtrados = productos.filter(producto =>
 
+    producto.nombre.toLowerCase().includes(texto)
 
-producto.nombre.toLowerCase().includes(texto)
-
-||
-
-producto.categoria.toLowerCase().includes(texto)
+);
 
 
 
@@ -133,24 +130,6 @@ console.log("VISOR:", visor);
 const imagenGrande = document.getElementById("imagen-grande");
 
 const cerrar = document.querySelector(".cerrar");
-
-
-
-document.querySelectorAll(".imagen-producto").forEach(imagen => {
-
-
-    imagen.addEventListener("click",()=>{
-
-
-        visor.style.display="flex";
-
-        imagenGrande.src = imagen.src;
-
-
-    });
-
-
-});
 
 
 
