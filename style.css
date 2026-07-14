@@ -433,19 +433,27 @@ PRODUCTOS
 
     background:white;
 
-    border-radius:22px;
+    border-radius:25px;
 
     overflow:hidden;
 
-    box-shadow:var(--sombra);
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
 
     transition:.35s;
+
+    border:1px solid #f8dce5;
+
+}
 
 }
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(217,122,150,.25);
+
+}
 
 }
 
